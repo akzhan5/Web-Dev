@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Instagram</title>
+    <style> 
+            body {
+                background-color: #fafafa;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+                font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                }
+                :root {
+                --base-unit: 4px;
+                }
+                .main {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap; /*указывает, следует ли флексам располагаться в одну строку или можно занять несколько строк*/
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                height: 85%;
+                margin-top: 30px;
+                }
+                .main__left {
+                height: 700px;
+                width: 430px;
+                background-image: url(https://static.cdninstagram.com/rsrc.php/v3/y4/r/ItTndlZM2n2.png);
+                background-repeat: no-repeat;
+                transform: scale(1.1);
+                margin-right: 40px;
+                margin-top: 50px;
+                }
+                .main__left__phone {
+                position: relative;
+                top: 28px;
+                left: 155px;
+                width: 250px;
+                height: 539px;
+                }
+                .main__right {
+                margin-top: -35px;
+                }
+                .main__right__form {
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: stretch;
+                align-content: center;
+                margin: 25px;
+                padding: 25px;
+                width: 350px;
+                height: 398px;
+                border: 1px solid #dbdbdb;
+                border-radius: 1px;     
+                }
+            .main__right__form_logo {
+            padding: 20px 60px;
+            display: inline-block;
+            cursor: pointer;
+            }
+            #main__right__form_login,
+            #main__right__form_password {
+            padding: 10px;
+            background-color: #fafafa;
+            border-radius: 3px;
+            border: 1px solid #dbdbdb;
+            margin: calc(var(--base-unit) * 2) 0;
+            }
+            #main__right__form_login:active,
+            #main__right__form_login:focus,
+            #main__right__form_password:active,
+            #main__right__form_password:focus {
+            border: 1px solid grey;
+            }
+            .main__right__form_btn {
+            background-color: #0095f6;
+            opacity: 0.6;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            margin: calc(var(--base-unit) * 2) 0;
+            border-radius: 12px;
+            font-weight: 500;
+            }
+            .main__right__form_divider {
+            display: flex;
+            margin-top: 25px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            }
+            .main__right__form_btn_fcb {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 18px;
+            }
+            .main__right__form_btn_fcb_logo {
+            height: 16px;
+            width: 16px;
+            background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+            background-repeat: no-repeat;
+            background-position: -414px -259px;
+            transform: scale(1.4);
+            display: inline-block;
+            margin-right: 8px;
+            position: relative;
+            top: 1px;
+            cursor: pointer;
+            }
+            .main__right__form_link {
+            text-align: center;
+            padding: 20px;
+            }
+            .main__right__bottom {
+            border: 1px solid #dbdbdb;
+            border-radius: 1px;
+            background-color: white;
+            margin: 25px;
+            padding: 25px;
+            width: 350px;
+            text-align: center;
+            }
+            .main__right__apps {
+            margin-top: 20px;
+            text-align: center;
+            }
+            .footer {
+            height: 15%;
+            }
+            .footer__top,
+            .footer__bottom {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            max-width: 1300px;
+            margin: auto;
+            }
+            .footer__top_link {
+            text-decoration: none;
+            color: #8e8e8e;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            cursor: pointer;
+            padding: 8px;
+}
+    </style> 
+  </head>
+  <body>
+    <main>
+      <div class="main">
+        <div class="main__left">
+          <img
+            src="/Users/akzhansabibolda/Desktop/Web-Dev/Lab2/main_page.png"  
+            alt="img"
+            class="main__left__phone"
+          />
+        </div>
+        <div class="main__right">
+          <!--right-->
+          <div class="main__right__form">
+            <!--DISPLAY:FLEX-->
+            <img
+              src="/Users/akzhansabibolda/Desktop/Web-Dev/Lab2/logo.png"
+              alt="logo"
+              class="main__right__form_logo"
+            />
+            <!-- <i role="img" class="main__right__form_logo"></i> -->
+            <input
+              type="email"
+              name="email"
+              id="main__right__form_login"
+              placeholder="Телефон, имя пользователя или эл.адрес"
+            />
+            <input
+              type="password"
+              name="password"
+              id="main__right__form_password"
+              placeholder="Пароль"
+            />
+            <div class="main__right__form_btn">Войти</div>
+            <div class="main__right__form_divider">
+              <div
+                class="line"
+                style="
+                  width: 120px;
+                  height: 1px;
+                  background-color: gray;
+                  opacity: 0.3;
+                "
+              ></div>
+              <div
+                class="or"
+                style="color: gray; padding: 0 20px; font-weight: 600"
+              >
+                ИЛИ
+              </div>
+              <div
+                class="line"
+                style="
+                  width: 120px;
+                  height: 1px;
+                  background-color: gray;
+                  opacity: 0.3;
+                "
+              ></div>
+            </div>
+            <div class="main__right__form_btn_fcb">
+              <span class="main__right__form_btn_fcb_logo"></span>
+              <a
+                href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%25221ho1i5c1q4fqnm1yum6ywcrg2jqld7ruf1xnujlg2imd0s1mbfy8g%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Dru_RU%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3De25543c5-6dce-44dd-94f9-3d364803b2cc%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%25221ho1i5c1q4fqnm1yum6ywcrg2jqld7ruf1xnujlg2imd0s1mbfy8g%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=ru_RU&pl_dbl=0"
+                style="text-decoration: none; color: #385185"
+                >Войти через Facebook</a
+              >
+            </div>
+            <div class="main__right__form_link">
+              <a
+                href="https://www.instagram.com/accounts/password/reset/"
+                style="color: #00376b; text-decoration: none"
+                >Забыли пароль?</a
+              >
+            </div>
+          </div>
+
+          <div class="main__right__bottom">
+            У вас ещё нет аккаунта?
+            <a
+              href="https://www.instagram.com/accounts/emailsignup/"
+              style="
+                color: #0095f6;
+                font-weight: 600;
+                line-height: 18px;
+                text-decoration: none;
+              "
+              >Зарегистрироваться</a
+            >
+          </div>
+          <div class="main__right__apps">
+            <div style="margin: 5px">Установите приложение.</div>
+
+            <img
+              src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png"
+              alt="img1"
+              style="width: 144px; height: 40px; margin: 8px"
+            />
+
+            <img
+              src="https://static.cdninstagram.com/rsrc.php/v3/yv/r/_UbeIRgTpG-.png"
+              alt="img2"
+              style="width: 111px; height: 40px; margin: 8px"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <a href="https://about.meta.com/" class="footer__top_link">Meta</a>
+        <a href="https://about.instagram.com/" class="footer__top_link"
+          >Информация</a
+        >
+        <a href="https://about.instagram.com/blog/" class="footer__top_link"
+          >Блог</a
+        >
+        <a
+          href="https://about.instagram.com/about-us/careers"
+          class="footer__top_link"
+          >Вакансии</a
+        >
+        <a href="https://help.instagram.com/" class="footer__top_link"
+          >Помощь</a
+        >
+        <a
+          href="https://developers.facebook.com/docs/instagram"
+          class="footer__top_link"
+          >API</a
+        >
+        <a
+          href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect"
+          class="footer__top_link"
+          >Конфиденциальность</a
+        >
+        <a
+          href="https://help.instagram.com/581066165581870/"
+          class="footer__top_link"
+          >Условия</a
+        >
+        <a
+          href="https://www.instagram.com/directory/profiles/"
+          class="footer__top_link"
+          >Популярные аккаунты</a
+        >
+        <a
+          href="https://www.instagram.com/explore/locations/"
+          class="footer__top_link"
+          >Места</a
+        >
+        <a href="https://www.instagram.com/web/lite/" class="footer__top_link"
+          >Instagram Lite</a
+        >
+        <a
+          href="https://web.facebook.com/help/instagram/261704639352628?_rdc=1&_rdr"
+          class="footer__top_link"
+          >Загрузка контактов и лица, не являющиеся пользователями</a
+        >
+    </div>
+    <div class="footer__bottom">
+          <a href="#" class="footer__top_link"
+            >Русский &#5167;</a
+          >
+          <div class="footer__top_link">© 2023 Instagram from Meta</div>
+
+      </div>
+    </footer>
+  </body>
+</html>
