@@ -1,0 +1,140 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset = "UTF-8" /> 
+    <title> ToDo App </title> 
+    <style> 
+        body {
+            margin-top: 0;
+            padding-top: 0;
+        }
+        header {
+            background-color: black; 
+            width: 100%; 
+            height: 30px;
+            margin-top: 0px;
+            padding-top: 0;
+        }
+        .name {
+            padding: 0%;
+            margin:auto; 
+        }
+        .header_name {
+            color: grey; 
+            margin-left: 20px; 
+            font-weight: 10;
+            opacity: 0.7;  
+            font-size: 15px; 
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #content {
+            border-radius: 3px; 
+            border-color: rgb(160, 158, 158); 
+            border-width: thin; 
+            opacity: 0.5;
+            width: 50%; 
+            height: 25px; 
+            margin: auto;  
+            position: relative;
+            margin-left: 30%; 
+            color: black; 
+        }
+        #add {
+            background-color: rgb(64, 153, 216); 
+            border-radius: 3px; 
+            border-width: thin; 
+            border-color: rgb(64, 153, 216); 
+            width: 5%; 
+            height: 27px; 
+            color: rgb(234, 229, 229); 
+            margin-left: 15px
+        }
+        .main_input {
+            margin: auto; 
+        }
+        .main_items {
+            margin-left: 30%; 
+            margin-top: 3%; 
+            border-color: grey; ;
+        }
+        .items {
+            font-size: 14px;
+            margin-bottom: 6px; 
+        }
+        .item {
+            margin-left: 15px;
+        } 
+        .main_name {
+            margin-left: 25%; 
+        }
+        h2 {
+            font-size: 23px; 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(128, 128, 128); 
+        }
+        #tasks {
+            list-style-type: none;
+        }
+        img {
+            position:initial; 
+            width: 4%; ; 
+            margin-left: 225px;  
+            margin-top: 3px; 
+            padding-top: 2px; 
+            margin-bottom: 0px; 
+            padding-bottom: 0px; 
+            object-fit: cover;
+         }
+    </style> 
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body> 
+    <header> 
+        <div class="name"> 
+        <h4 class="header_name"> ToDo List </h4>
+        </div>
+    </header>
+
+    <div class = "main"> 
+        <div class = "main_name"> 
+            <h2>ToDo List</h2>
+        </div>
+
+        <div class = "main_input"> 
+            <input type="text" name="content" id="content" placeholder="New Task"/> 
+            <button id="add" onclick = "insertItem()"> Add </button> 
+        </div>
+
+        <div class = "main_items"> 
+            <ul id="tasks"> 
+
+            <li> 
+            <div class="items"> <!-- for each one the same name-->
+            <input onclick="checkItem(this.value)" type="checkbox" name="item" id="Item" value = "First Item"/> 
+            <label class = "item" for="First Item" id="First Item"> First Item </label> 
+            <img onclick = "deleteItem(this.id)" id="First Item img" src="/Users/akzhansabibolda/Desktop/Web-Dev/Lab3/TODO list/istockphoto-1201412419-1024x1024.jpg"/> 
+            </div>
+            </li>
+
+            <li> 
+            <div class="items">
+            <input onclick="checkItem(this.value)" type="checkbox" name="item" id="Item" value = "Second Item"/> 
+            <label class = "item" for="Second Item" id = "Second Item"> Second Item </label> 
+            <img onclick = "deleteItem(this.id)" id="Second Item img" src="/Users/akzhansabibolda/Desktop/Web-Dev/Lab3/TODO list/istockphoto-1201412419-1024x1024.jpg"/> 
+            </div>
+            </li> 
+
+            <li> 
+            <div class="items">
+            <input onclick="checkItem(this.value)" onclick="checkItem()" type="checkbox" name="item" id="Item" value = "Third Item"/> 
+            <label class = "item" for="Third Item" id="Third Item"> Third Item </label> 
+            <img onclick = "deleteItem(this.id)" id = "Third Item Img" src="/Users/akzhansabibolda/Desktop/Web-Dev/Lab3/TODO list/istockphoto-1201412419-1024x1024.jpg"/> 
+            </div>
+            </li> 
+
+        </ul> 
+        </div> 
+    </div>
+    </div> 
+</body>
+</html>
