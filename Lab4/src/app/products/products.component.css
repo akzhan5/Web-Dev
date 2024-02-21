@@ -1,0 +1,53 @@
+h2 {
+    font-size: 30px; 
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: rgb(242, 156, 171);
+    margin-left: 15px; 
+}
+
+a {
+    font-family: 'Arial Narrow Bold', sans-serif; 
+    margin: 45px; 
+    font-size: 23px;  
+    color:rgb(47, 112, 92)
+}
+
+img {
+    width: 10%; 
+    float: left; 
+    margin-left: 30px; 
+}
+
+p {
+    margin-bottom: 30%;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    text-align: justify;
+    color:rgb(130, 119, 120)
+}
+
+button {
+    margin-top: 15%;
+    float: left; 
+    margin-left: 75%; 
+    width: 70px; 
+    height: 50px;
+    background-color: rgb(212, 85, 95);
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+em {
+    margin-left: 20px;
+    margin-right: 20px; 
+    font-size: 20px; 
+}
+
+
+
+
+
+
+
+
