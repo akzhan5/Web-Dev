@@ -1,0 +1,8 @@
+h2 {
+  color: rgb(66, 131, 176);
+}
+
+h2:hover{
+  color:rgb(37, 80, 108);
+  text-decoration: underline;
+}
