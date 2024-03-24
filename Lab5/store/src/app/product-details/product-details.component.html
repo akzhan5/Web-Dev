@@ -3,7 +3,7 @@
 <div *ngIf="product">
     <a [href]='product.addressUrl'><h2>{{ product.name }}</h2></a>
     <img src="{{ product.image }}" style="width: 200px">
-    <h4>{{ product.price }}</h4> <!-- converting to dollar type-->
+    <h4>{{ product.price }}</h4> 
     <p>{{ product.description }}</p>
     <button type="button" (click)="deleteProduct(product)" id="Delete">Delete</button>
     <p>{{product.likes}}</p>
